@@ -1,0 +1,156 @@
+.content * {
+    transition-duration: 250ms;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    padding: 100px;
+    padding-top: 150px;
+}
+
+.navParent, .contentParent, .descriptionParent {
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.navParent {
+    height: fit-content;
+    border-radius: 15px;
+    background: linear-gradient(to right, rgba(0, 22, 45,0.8), rgba(6, 9, 23, 0.8));
+    flex-direction: column;
+}
+
+.navParent {
+    position: fixed;
+    max-width: 20%;
+    left: 3%;
+}
+.contentParent {
+    position: absolute;
+    padding-bottom: 10%;
+    width: 40%;
+    left: 20.5%; 
+}
+@media screen and (orientation: portrait) {
+    .contentParent {
+        width: fit-content; 
+    }
+}
+.descriptionParent {
+    position: fixed;
+    width: 30%;
+    right: 3%;  
+}
+
+.nav-item {
+    margin: 0 6.125% 0 6.125%;
+    width: 75%;
+    height: fit-content;
+    padding: 20px;
+    text-align: left;
+    border-radius: 15px;
+} .nav-item.first {
+    margin-top: 15px;
+} .nav-item.last {
+    margin-bottom: 15px;
+}
+
+.nav-item:hover {
+    outline: 3px solid rgb(255,255,255,0.8) !important;
+    box-shadow: 0 0 10px rgba(255,255,255, 0.6) !important;
+}
+
+.nav-item.active {
+    outline: 3px solid rgb(255,255,255,0.8);
+    box-shadow: 0 0 10px rgba(255,255,255, 0.6);
+}
+
+.navParent:has(.nav-item:hover) .nav-item.active {
+    outline: none;
+    box-shadow: none;
+}
+
+.header {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: xx-large;
+} .header:not(.first) {
+    margin-top: 30px;
+}
+
+.contentParent {
+    height: fit-content;
+    border-radius: 15px;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.option {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute items evenly */
+    margin-top: 30px;
+    font-size: larger;
+} .option .title {
+    flex: 1; /* Allow .title to grow and fill available space */
+    text-align: left; /* Align text inside .title to the left */
+    color: rgb(122, 122, 122);
+}
+
+.option-picker {
+    text-align: right; /* Align content inside .option-picker to the right */
+} .option-title {
+    display: block; /* Ensure .option-title behaves as a block element */
+}
+
+.option-slider {
+    text-align: center;
+    padding: 15px;
+    width: 50%;
+}
+
+.option-disabled * {
+    color:rgb(120, 120, 120) !important;
+}
+
+.descriptionParent {
+    height: fit-content;
+    border-radius: 15px;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.descriptionParent .title {
+    font-size: larger;
+}
+.descriptionParent .description {
+    margin-top: 30px;
+    color: rgb(122,122,122);
+}
+
+.warning {
+    color: yellow !important;
+}
+
+
+
+.options .option {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+} .options .option.first {
+    margin-top: 30px;
+} .options .option.active {
+    background-color: white;
+    color: black;
+}
+
+/* FONTS */
+.nav-item, .option .title, .description {
+    font-family: "Heading Now Lite", Tahoma, sans-serif;
+    color: white;
+}

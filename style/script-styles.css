@@ -1,0 +1,3 @@
+.inactive-object, .inactive-object * {
+    display: none !important;
+}

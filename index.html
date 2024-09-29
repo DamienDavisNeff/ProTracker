@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTracker · [Placeholder]</title>
+    <link rel="shortcut icon" href="https://static.wikia.nocookie.net/logopedia/images/d/db/Fortnite_S1.svg/" type="image/x-icon">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/style/z-index.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/content.css">
+    <link rel="stylesheet" href="/style/script-styles.css">
+    <!-- My Libraries -->
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/pageNav.js" defer></script>
+    <!-- Third Party Libraries -->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script-->
+</head>
+<body>
+    <div class="floating-triangles"></div>
+    <script src="/style/triangles.js" defer></script>
+    <div id="header">
+        <div class="tab first active" link-id="video">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text"><!--Video-->Video</span>
+        </div>
+        <div class="tab" link-id="sound">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text"><!--Sound-->Sound</span>        
+        </div>
+        <div class="tab" link-id="game">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text"><!--Game-->Game</span>        
+        </div>
+        <div class="tab" link-id="ui">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text"><!--UI-->UI</span>        
+        </div>
+        <!-- UNUSED
+        <div class="tab" link-id="touch">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text">Touch & Gyro</span>        
+        </div> -->
+        <!--
+        CONTROLLER PLAYERS HAVE KEYBOARD TABS HIDDEN -->
+        <div class="tab" link-id="keyboard">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text"><!--Mouse & Keyboard-->Mouse & Keyboard</span>        
+        </div>
+        <div class="tab" link-id="keybinds">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text"><!--Keybinds-->Keybindings</span>        
+        </div>
+        <!--
+        KEYBOARD PLAYERS HAVE CONTROLLER TABS HIDDEN
+        <div class="tab" link-id="controller">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text">Controller</span>        
+        </div>
+        <div class="tab" link-id="controllerBinds">
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text">Controller Binds</span>        
+        </div> -->
+        <div class="tab last" link-id="account" hidden>
+            <img src="/images/icons/placeholder.svg">
+            <span class="tab-text"><!--Account-->Account</span>        
+        </div>
+    </div>
+
+    <div id="video" class="content">
+        <div class="navParent" type="desktop">
+            <div class="nav-item first active" subsectionID="0video">Display</div>
+            <div class="nav-item" subsectionID="1video" id="dbg">Graphics</div>
+            <div class="nav-item" subsectionID="2video">Graphics Quality</div>
+        </div>
+        <div class="contentParent">
+            <span class="header first" id="0a">Display</span>
+            <div class="option">
+                <span class="title">Window Mode</span>
+                <div class="option-picker">
+                    <span class="option-title">Fullscreen</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Resolution</span>
+                <div class="option-picker">
+                    <span class="option-title font-override" >1920x1080</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">VSync</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Frame Rate Limit</span>
+                <div class="option-picker">
+                    <span class="option-title font-override">240</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Rendering Mode</span>
+                <div class="option-picker">
+                    <span class="option-title">Performance</span>
+                </div>
+            </div>
+            <span class="header" id="1a">Graphics</span> 
+            <div class="option">
+                <span class="title">Brightness</span>
+                <div class="option-slider" style="
+                        background-image: linear-gradient(to right,
+                            rgb(0,20,120,0.8) 0%,
+                            rgb(0,20,120,0.8) 50%,
+                            rgb(0,0,40,0.8) 50%,
+                            rgb(0,0,40,0.8) 100%
+                        );
+                ">
+                    <span class="option-title font-override">100%</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">User Interface Contrast</span>
+                <div class="option-slider" style="
+                        background-image: linear-gradient(to right,
+                            rgb(0,20,120,0.8) 0%,
+                            rgb(0,20,120,0.8) 50%,
+                            rgb(0,0,40,0.8) 50%,
+                            rgb(0,0,40,0.8) 100%
+                        );
+                ">
+                    <span class="option-title font-override">1x</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Color Blind Mode</span>
+                <div class="option-picker">
+                    <span class="option-title">Protanopia</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Color Blind Strength</span>
+                <div class="option-picker">
+                    <span class="option-title font-override">5</span>
+                </div>
+            </div>
+            <span class="header" id="2a">Graphics Quality</span>
+            <div class="option">
+                <span class="title">Anti-Aliasing</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Temporal Super Resolution</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title"><span class="font-override-lite">3</span>D Resolution</span>
+                <div class="option-slider" style="
+                        background-image: linear-gradient(to right,
+                            rgb(0,20,120,0.8) 0%,
+                            rgb(0,20,120,0.8) 90%,
+                            rgb(0,0,40,0.8) 90%,
+                            rgb(0,0,40,0.8) 100%
+                        );
+                ">
+                    <span class="option-title font-override">90%</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Dynamic <span class="font-override-lite">3</span>D Resolution</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Nanite Virtualized Geometry</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Shadows</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Global Illumination</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Reflections</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">View Distance</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Textures</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Effects</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Post Processing</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Ray Tracing</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+        </div>
+        <div class="descriptionParent" class="" type="desktop">
+            <span class="title">Placeholder</span>
+            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <span class="description warning">Lorem epsum</span>
+            <div class="options">
+                <span class="option first active">Placeholder</span>
+                <span class="option">Placeholder</span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="sound" class="content inactive-object">
+        <div class="navParent" type="desktop">
+            <div class="nav-item first active" subsectionID="0video">Display</div>
+            <div class="nav-item" subsectionID="1video" id="dbg">Graphics</div>
+            <div class="nav-item" subsectionID="2video">Graphics Quality</div>
+        </div>
+        <div class="contentParent">
+            <span class="header first" id="0a">Sound</span>
+            <div class="option">
+                <span class="title">Window Mode</span>
+                <div class="option-picker">
+                    <span class="option-title">Fullscreen</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Resolution</span>
+                <div class="option-picker">
+                    <span class="option-title font-override" >1920x1080</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">VSync</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Frame Rate Limit</span>
+                <div class="option-picker">
+                    <span class="option-title font-override">240</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Rendering Mode</span>
+                <div class="option-picker">
+                    <span class="option-title">Performance</span>
+                </div>
+            </div>
+            <span class="header" id="1a">Graphics</span> 
+            <div class="option">
+                <span class="title">Brightness</span>
+                <div class="option-slider" style="
+                        background-image: linear-gradient(to right,
+                            rgb(0,20,120,0.8) 0%,
+                            rgb(0,20,120,0.8) 50%,
+                            rgb(0,0,40,0.8) 50%,
+                            rgb(0,0,40,0.8) 100%
+                        );
+                ">
+                    <span class="option-title font-override">100%</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">User Interface Contrast</span>
+                <div class="option-slider" style="
+                        background-image: linear-gradient(to right,
+                            rgb(0,20,120,0.8) 0%,
+                            rgb(0,20,120,0.8) 50%,
+                            rgb(0,0,40,0.8) 50%,
+                            rgb(0,0,40,0.8) 100%
+                        );
+                ">
+                    <span class="option-title font-override">1x</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Color Blind Mode</span>
+                <div class="option-picker">
+                    <span class="option-title">Protanopia</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Color Blind Strength</span>
+                <div class="option-picker">
+                    <span class="option-title font-override">5</span>
+                </div>
+            </div>
+            <span class="header" id="2a">Graphics Quality</span>
+            <div class="option">
+                <span class="title">Anti-Aliasing</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Temporal Super Resolution</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title"><span class="font-override-lite">3</span>D Resolution</span>
+                <div class="option-slider" style="
+                        background-image: linear-gradient(to right,
+                            rgb(0,20,120,0.8) 0%,
+                            rgb(0,20,120,0.8) 90%,
+                            rgb(0,0,40,0.8) 90%,
+                            rgb(0,0,40,0.8) 100%
+                        );
+                ">
+                    <span class="option-title font-override">90%</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Dynamic <span class="font-override-lite">3</span>D Resolution</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Nanite Virtualized Geometry</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Shadows</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Global Illumination</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option option-disabled">
+                <span class="title">Reflections</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">View Distance</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Textures</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Effects</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Post Processing</span>
+                <div class="option-picker">
+                    <span class="option-title">Low</span>
+                </div>
+            </div>
+            <div class="option">
+                <span class="title">Ray Tracing</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
+        </div>
+        <div class="descriptionParent" class="" type="desktop">
+            <span class="title">Placeholder</span>
+            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <span class="description warning">Lorem epsum</span>
+            <div class="options">
+                <span class="option first active">Placeholder</span>
+                <span class="option">Placeholder</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" type="desktop" hidden>Heading Now © ZetaFonts<br>Not Endorsed, Sponsored or Affiliated With Epic Games, Inc / Fortnite</div>
+    <div id="footer" type="mobile" hidden>NOT OPTIMIZED FOR MOBILE!<br>Heading Now © ZetaFonts<br>Not Endorsed, Sponsored or Affiliated With Epic Games, Inc / Fortnite</div>
+
+
+</body>
+</html>

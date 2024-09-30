@@ -26,3 +26,14 @@ function GoTo(url,target) {
     if(target === undefined) target = "_blank";
     window.open(url,target);
 }
+
+// check if an element is visible on the current view area
+function IsVisible(element) {
+    boundArea = element.getBoundingClientRect();
+    isVisible = (
+        boundArea.left >= 0 &&
+        boundArea.right <= window.innerWidth &&
+        boundArea.top >= 0 &&
+        boundArea.bottom <= window.innerHeight
+    ); return isVisible;
+}

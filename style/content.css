@@ -141,7 +141,7 @@
     margin-top: 15px;
     padding: 10px;
     border-radius: 5px;
-    width: 50%;
+    width: fit-content;
 } .options .option.first {
     margin-top: 30px;
 } .options .option.active {

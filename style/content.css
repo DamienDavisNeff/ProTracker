@@ -88,6 +88,17 @@
     margin-left: 2vw;
 }
 
+.contentParent .option {
+    margin-top: 15px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    height: 70px;
+}
+.contentParent .option:hover {
+    outline: 3px solid rgb(255,255,255,0.8) !important;
+    box-shadow: 0 0 10px rgba(255,255,255, 0.6) !important;
+}
+
 .option {
     display: flex;
     align-items: center; /* Align items vertically */
@@ -108,8 +119,10 @@
 
 .option-slider {
     text-align: center;
-    padding: 15px;
     width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .option-disabled * {
@@ -142,11 +155,19 @@
     padding: 10px;
     border-radius: 5px;
     width: fit-content;
-} .options .option.first {
+    text-transform: uppercase;
+} .options .option.font-override-black, .options .option.font-override-bold, .options .option.font-override-medium, .options .option.font-override-lite {
+    text-transform: none !important;
+}
+ .options .option.first {
     margin-top: 30px;
 } .options .option.active {
     background-color: white;
     color: black;
+}
+.options.long-list .option {
+    margin-top: 15px;
+    margin-bottom: -5px;
 }
 
 /* FONTS */

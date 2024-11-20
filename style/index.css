@@ -2,12 +2,21 @@ html {
     font-family: 'Heading Now', Tahoma, sans-serif;
     color: white;
 }
-.font-override {
+.font-override-black {
     font-family: 'Burbank Black', Tahoma, sans-serif !important;
+    font-size: larger;
+}
+.font-override-bold {
+    font-family: 'Burbank Bold', Tahoma, sans-serif !important;
+    font-size: larger;
+}
+.font-override-medium {
+    font-family: 'Burbank Medium', Tahoma, sans-serif !important;
+    font-size: larger;
 }
 .font-override-lite {
     font-family: 'Burbank Lite', Tahoma, sans-serif !important;
-    font-size: x-large;
+    font-size: larger;
 }
 
 .debug {

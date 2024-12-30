@@ -126,8 +126,13 @@ function GetClosestSubsection(activeTab = GetActiveTab()) {
 }
 
 function DisplayCurrentSubsection(closestSubsection = GetClosestSubsection()) {
-    const subsectionID = closestSubsection.getAttribute("id");
-    if(subsectionID === null) return;
+    subsectionID = undefined;
+    try {
+        const subsectionID = closestSubsection.getAttribute("id");
+    } catch(error) {
+        subsectionID = null;
+        return;
+    } if(subsectionID === null || subsectionID === undefined) return;
     currentElement = null;
     for(let a = 0; a < Object.keys(subsectionConfig).length; a++) {
         if(subsectionConfig[Object.keys(subsectionConfig)[a]].id == subsectionID) {
@@ -152,7 +157,7 @@ function DisplayDescription(hoveredElement, activeSubsection = GetActiveSubsecti
         }
     }
     console.log(currentDescription);
-
+    if(targetDescription === null || targetDescription === undefined) return;
     currentDescription.classList.add("inactive-object");
     targetDescription.classList.remove("inactive-object");
     console.log(targetDescription);

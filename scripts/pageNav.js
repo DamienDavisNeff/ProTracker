@@ -127,6 +127,7 @@ function GetClosestSubsection(activeTab = GetActiveTab()) {
 
 function DisplayCurrentSubsection(closestSubsection = GetClosestSubsection()) {
     const subsectionID = closestSubsection.getAttribute("id");
+    if(subsectionID === null) return;
     currentElement = null;
     for(let a = 0; a < Object.keys(subsectionConfig).length; a++) {
         if(subsectionConfig[Object.keys(subsectionConfig)[a]].id == subsectionID) {
@@ -139,6 +140,7 @@ function DisplayCurrentSubsection(closestSubsection = GetClosestSubsection()) {
 
 function DisplayDescription(hoveredElement, activeSubsection = GetActiveSubsection()) {
     hoveredID = hoveredElement.getAttribute("id");
+    if(hoveredID === null) return;
     currentDescription = GetActiveDescription();
     // get target desc
     const allDescriptions = document.querySelectorAll(".descriptionParent");

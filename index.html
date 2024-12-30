@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="option" id="a2">
-                <span class="title">Vsync</span>
+                <span class="title">V-Sync</span>
                 <div class="option-picker">
                     <span class="option-title">Off</span>
                 </div>
@@ -146,6 +146,12 @@
                     <span class="option-title">5</span>
                 </div>
             </div>
+            <div class="option option-disabled" id="a8b">
+                <span class="title">Motion Blur</span>
+                <div class="option-picker">
+                    <span class="option-title">Off</span>
+                </div>
+            </div>
             <div class="option" id="a9">
                 <span class="title">User Interface Parallax</span>
                 <div class="option-picker">
@@ -153,7 +159,7 @@
                 </div>
             </div>
             <span class="header" id="2a">Graphics Quality</span>
-            <div class="option" id="a10">
+            <div class="option option-disabled" id="a10">
                 <span class="title">Anti-Aliasing</span>
                 <div class="option-picker">
                     <span class="option-title">Off</span>
@@ -233,7 +239,7 @@
                 </div>
             </div>
             <div class="option option-disabled" id="a22">
-                <span class="title">Ray Tracing</span>
+                <span class="title">Hardware Ray Tracing</span>
                 <div class="option-picker">
                     <span class="option-title">Off</span>
                 </div>
@@ -257,8 +263,8 @@
         </div>
         <div class="descriptionParent inactive-object" id="a1" type="desktop">
             <span class="title">Resolution</span>
-            <span class="description">In <b>Windowed</b> mode, this determines the size of the window. In <b>Fullscreen</b> mode, this determines the graphic card's output resoltuion, which can result in black bars or stretching, depending on the monitor and graphics card. Display Resolution is inactive in <b>Windowed Fullscreen</b> mode.</span>
-            <span class="description warning" hidden>Lorem epsum</span>
+            <span class="description">In <b>Windowed</b> mode, this determines the size of the window. In <b>Fullscreen</b> mode, this determines the graphic card's output resolution, which can result in black bars or stretching, depending on the monitor and graphics card. Display Resolution is inactive in <b>Windowed Fullscreen</b> mode.</span>
+            <span class="description warning">When the windowed mode is set to <b>Windowed Fullscreen</b>, the display resolution must match the native desktop resolution.</span>
             <div class="options">
                 <span class="option first">1280x720</span>
                 <span class="option">1600x900</span>
@@ -266,8 +272,8 @@
             </div>
         </div>
         <div class="descriptionParent inactive-object" id="a2" type="desktop">
-            <span class="title">Vsync</span>
-            <span class="description">Enabling Vsync eliminates screen tearing by always rendering and presenting a full frame. Disabling Vsync can give higher frame rates and better input response time, but may result in horizontal screen tearing. This feature only works in <b>Fullscreen</b> mode.</span>
+            <span class="title">V-Sync</span>
+            <span class="description">Enabling V-Sync eliminates screen tearing by always rendering and presenting a full frame. Disabling V-Sync can give higher frame rates and better input response time, but may result in horizontal screen tearing. This feature only works in <b>Fullscreen</b> mode.</span>
             <span class="description warning" hidden>Lorem epsum</span>
             <div class="options">
                 <span class="option first active">Off</span>
@@ -276,16 +282,13 @@
         </div>
         <div class="descriptionParent inactive-object" id="a3" type="desktop">
             <span class="title">Frame Rate Limit</span>
-            <span class="description">Frame rate limits set the highest frame rate that is allowed. Set this lower for a more conistent frame rate or higher for the best experience on fast machines. You may need to disable Vsync to reach higher frame rates.</span>
+            <span class="description">Frame rate limits set the highest frame rate that is allowed. Set this lower for a more consistent frame rate or higher for the best experience on fast machines. You may need to disable Vsync to reach higher frame rates.</span>
             <span class="description warning" hidden>Lorem epsum</span>
             <div class="options long-list">
-                <span class="option first">30</span>
                 <span class="option">60</span>
-                <span class="option">120</span>
+                <span class="option first">120</span>
                 <span class="option">144</span>
-                <span class="option">160</span>
                 <span class="option">165</span>
-                <span class="option">180</span>
                 <span class="option">200</span>
                 <span class="option active">240</span>
                 <span class="option">360</span>
@@ -294,7 +297,7 @@
         </div>
         <div class="descriptionParent inactive-object" id="a4" type="desktop">
             <span class="title">Rendering Mode</span>
-            <span class="description">Selects which low-llevel rendering mode to use.<br><b>DirectX 11</b> is the older graphics API.<br><b>Performance</b> is a mode that offers significant performance gains by disabling most rendering features to reduce memory usage and lighten the load on CPU and GPU.<br><b>DirectX 12</b> is a new graphics API and may offer performance increases over DirectX 11. It is required to enable Nanite (which dynamically and efficiently scales meshes in the envioronment) and Lumen (which uses multiple ray-tracing methods to solve global illumination and reflections).</span>
+            <span class="description">Selects which low-level rendering mode to use.<br><b>DirectX 11</b> is the older graphics API.<br><b>Performance</b> is a mode that offers significant performance gains by disabling most rendering features to reduce memory usage and lighten the load on CPU and GPU.<br><b>DirectX 12</b> is a new graphics API and may offer performance increases over DirectX 11. It is required to enable Nanite (which dynamically and efficiently scales meshes in the environment) and Lumen (which uses multiple ray-tracing methods to solve global illumination and reflections).</span>
             <span class="description warning">Some options from DirectX 11 do not appear in performance mode, but apply anyways.</span>
             <div class="options">
                 <span class="option">DirectX &nbsp;11</span>
@@ -313,7 +316,7 @@
             </div>
         </div>
         <div class="descriptionParent inactive-object" id="a6" type="desktop">
-            <span class="title">Brightness</span>
+            <span class="title">User Interface Contrast</span>
             <span class="description">Adjusts the contrast of the user interface.</span>
             <span class="description warning">The in-game version of this option provides an image to see your adjustments.</span>
             <div class="options" hidden>
@@ -343,13 +346,169 @@
                 <span class="option active">Fullscreen</span>
             </div>
         </div>
+        <div class="descriptionParent inactive-object" id="a8b" type="desktop">
+            <span class="title">Motion Blur</span>
+            <span class="description">Some people are sensitive to motion blur, turn this off to prevent nausea or keep it enabled to have mor fluent animations.</span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">On</span>
+            </div>
+        </div>
         <div class="descriptionParent inactive-object" id="a9" type="desktop">
             <span class="title">User Interface Parallax</span>
             <span class="description">Some menus, like the Item Shop, may have parallax effects. Disable this setting for those effects to remain static.</span>
             <span class="description warning" hidden>The in-game version of this option provides an image to see your adjustments.</span>
-            <div class="options" hidden>
+            <div class="options">
                 <span class="option first">Off</span>
                 <span class="option active">On</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a10" type="desktop">
+            <span class="title">Anti-Aliasing</span>
+            <span class="description">Anti-Aliasing smooths jagged edges and can stabilize the image under motion. Super Resolution methods do the same while additionally improving performance by rendering fewer pixels each frame to generation the same resolution output image.
+                <span hidden>
+                    <br><br><b>Off</b>: Anti-Aliasing is turned off.<br><br><b>FXAA</b>: Fast Approximate Anti-Aliasing requires less computing power, but being a spatial only anti-aliasing technique, it may result in flickering.<br><br><b>TAA</b>: Temporal Anti-Aliasing combines previous frames with the current frame to provide a better quality than FXAA.<br><br><b>TSR Low/Medium/High/Epic</b>: Temporal Super Resolution improves anti-aliasing quality, and overall rendering performance, by rendering few pixels each frame to produce comparable visual quality output image.
+                </span>
+            </span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">FXAA</span>
+                <span class="option">TAA</span>
+                <span class="option">TSR</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a11" type="desktop">
+            <span class="title">Temporal Super Resolution</span>
+            <span class="description">Unreal Engine's Temporal Super Resolution displays similarity detailed images with reduced load on your GPU for each frame. When enabled, it allows you to prioritize quality or performance.
+            </span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">Recommended</span>
+                <span class="option">Performance</span>
+                <span class="option">Balanced</span>
+                <span class="option">Quality</span>
+                <span class="option">Native</span>
+                <span class="option">Custom</span>
+
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a12" type="desktop">
+            <span class="title">3D Resolution</span>
+            <span class="description">3D resolution determines the resolution objects are rendered in game. Lower resolutions can significantly improve performance.</span>
+            <span class="description warning">Setting this option below 10% may negatively impact the game's playability.</span>
+            <div class="options" hidden>
+                <span class="option active first">0-100%</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a13" type="desktop">
+            <span class="title">Dynamic 3D Resolution</span>
+            <span class="description">Dynamic 3D resolution occasionally increases the resolution that objects are rendered in game when your GPU is under load.</span>
+            <span class="description warning">This option only appears when TSR is enabled.</span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options" hidden>
+                <span class="option active first">0-100%</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a14" type="desktop">
+            <span class="title">Nanite Virtualized Geometry</span>
+            <span class="description">High-end geometry rendering through nanite which improves geometry detail, but can lower framerate. Virtual Shadow Maps will be used when Nanite is enabled for higher quality shadowing.</span>
+            <span class="description warning">This option does not appear in Performance Mode.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">On</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a15" type="desktop">
+            <span class="title">Shadows</span>
+            <span class="description">Shadow quality determines the resolution and view distance of dynamic shadows. Shadows improve visual quality and give better depth perception, but can reduce performance. Virtual Shadow Maps will be used when Nanite is enabled for even higher quality.</span>
+            <span class="description warning">This option is called <b>Virtual Shadows</b> when Nanite is enabled.</span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">Medium</span>
+                <span class="option">High</span>
+                <span class="option">Epic</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a16" type="desktop">
+            <span class="title">Global Illumination</span>
+            <span class="description">Global Illumination controls the quality of ambient lighting.</span>
+            <span class="description warning">Nanite Virtualized Geometry is required to use Lumen High and Lumen Epic.</span>
+            <span class="description warning">This option does not appear in Performance Mode.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">Ambient Occlusion</span>
+                <span class="option">Lumen High</span>
+                <span class="option">Lumen Epic</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a17" type="desktop">
+            <span class="title">Reflections</span>
+            <span class="description">Reflections control the resolution and accuracy of reflections.</span>
+            <span class="description warning">Nanite Virtualized Geometry is required to use Lumen High and Lumen Epic.</span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">Screen Space</span>
+                <span class="option">Lumen High</span>
+                <span class="option">Lumen Epic</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a18" type="desktop">
+            <span class="title">View Distance</span>
+            <span class="description">View Distance determines how far away objects are culled.</span>
+            <span class="description warning" hidden>Lorem epsum</span>
+            <div class="options">
+                <span class="option active first">Near</span>
+                <span class="option">Medium</span>
+                <span class="option">High</span>
+                <span class="option">Epic</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a19" type="desktop">
+            <span class="title">Textures</span>
+            <span class="description">Higher texture settings give flat objects a more detailed appearance. Increasing this setting will make objects more detailed, but can reduce performance.</span>
+            <span class="description warning">Higher quality textures require you to download them in the Epic Games Launcher.</span>
+            <div class="options">
+                <span class="option active first">Low</span>
+                <span class="option">Medium</span>
+                <span class="option">High</span>
+                <span class="option">Epic</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a20" type="desktop">
+            <span class="title">Effects</span>
+            <span class="description">Effects determine the quality of visual effects in game. Increasing this setting will increase the quality of visual effects but can reduce performance.</span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options">
+                <span class="option active first">Low</span>
+                <span class="option">Medium</span>
+                <span class="option">High</span>
+                <span class="option">Epic</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a21" type="desktop">
+            <span class="title">Post Processing</span>
+            <span class="description">Post Processing effects include Motion Blur, Depth of Field, and Bloom. Increasing this setting improves the quality of post process effects, but can reduce performance.</span>
+            <span class="description warning">This option does not appear in Performance Mode, but may still apply.</span>
+            <div class="options">
+                <span class="option active first">Low</span>
+                <span class="option">Medium</span>
+                <span class="option">High</span>
+                <span class="option">Epic</span>
+            </div>
+        </div>
+        <div class="descriptionParent inactive-object" id="a21" type="desktop">
+            <span class="title">Ray Tracing</span>
+            <span class="description">Ray Tracing allows for higher quality Lumen Global Illumination and reflections, but may reduce performance.</span>
+            <span class="description warning">Lumen must be enabled is required to use Ray Tracing.</span>
+            <span class="description warning">This option does not appear in Performance Mode.</span>
+            <div class="options">
+                <span class="option active first">Off</span>
+                <span class="option">On</span>
             </div>
         </div>
     </div>

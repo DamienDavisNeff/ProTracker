@@ -109,6 +109,7 @@
     flex: 1; /* Allow .title to grow and fill available space */
     text-align: left; /* Align text inside .title to the left */
     color: rgb(122, 122, 122);
+    
 }
 
 .option-picker {
@@ -171,7 +172,22 @@
 }
 
 /* FONTS */
-.nav-item, .option .title, .description {
-    font-family: "Heading Now Lite", Tahoma, sans-serif;
+.header {
+    font-family: HeadingNowVariable, sans-serif;
+    font-variation-settings: "wdth" 750, "wght" 700;
     color: white;
+}
+.option .title, .nav-item, .description {
+    font-family: HeadingNowVariable, sans-serif;
+    font-variation-settings: "wdth" 668, "wght" 400;
+    color: white;
+}
+span.option {
+    font-family: HeadingNowVariable, sans-serif;
+    font-variation-settings: "wdth" 650, "wght" 600;
+    color: white;
+}
+.option-title, .title, .tab-text, .description b {
+    font-family: HeadingNowVariable, sans-serif;
+    font-variation-settings: "wdth" 668, "wght" 600;
 }
